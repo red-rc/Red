@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Red - Programs & Games</title>
+	<title>Red - Program Fixer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="icon.png" />
     <meta charset="utf-8">
@@ -39,20 +39,27 @@
         
         .lind:hover {
             transition-duration: 0.3s;
-            background: #d03b35;
-            
-        }
-        .linp {
-          color: #d03b35;  
-          text-decoration: none;
+            background: #d03b35;      
         }
         
-        .linp:hover {
-            background: #d03b35;
-            color: #fff;
-            transition-duration: 0.3s;
-            padding: 10px;
+        .download {
+            background: #3dd348;
+            width: 250px;
+            height: 50px;
+            border: none;
             border-radius: 2px;
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .download:hover {
+            background: #2ca234;
+            transition-duration: 0.3s;
         }
     </style>
     </head>
@@ -65,17 +72,18 @@
 			 <a class="lind" href="as.html">About us</a>
 		</nav>
 	</div>
-    <center>
-        <div style="width: 700px; font-size: 20px; font-family: 'Nunito', sans-serif;">
-	        <h2>Programs:</h2>
-            <p>
-                    <a class="linp" href="rd.html">Red Defender</a>
-            </p>
-            <p>
-                    <a class="linp" href="pf.html">Program Fixer</a>
-            </p>
-            <h2>Games:</h2>
-        </div>
+    <center style="font-size: 20px; font-family: 'Nunito', sans-serif;">          
+        <h2>Program Fixer</h2>
+            <h3>Description:</h3>
+        <p style="width: 700px;">
+            Program Fixer is an app that allows you to download all versions of DirectX and C++ Visual Studio Redistributables from the server, which are necessary for the correct operation of most programs, so if you have a non-working program or game, you can use our product.
+        </p>
+        <p style="width: 700px;">
+            Notes: 
+            If your app or game still doesn't work, you can try to check if you have the latest driver for your graphics card installed, you can do this by going to your graphics card manufacturer's website.
+        </p>
+        <p style="color: #9f9f9f;">All rights reserved©</p>
+        <button class="download"><a href="setup_pf.msi">Download</a></button>
     </center>
 </body>
 </html>
