@@ -42,6 +42,31 @@
             background: #d03b35;
             
         }
+        
+        .head {
+            font-size: 25px;
+            color: #141e29;
+            border-top: 1px solid #efefef;
+            font-family: 'Lato', sans-serif;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            width: 500px;
+        }
+        
+        .text {
+            max-width: 500px;
+            font-size: 17px;
+            color: #141e29;
+            background: #f9f9f9;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .time {
+            font-size: 13px;
+            color: #7e7e7e;
+            font-family: 'Lato', sans-serif;
+            padding-top: 20px;
+        }
     </style>
     </head>
 <body>
@@ -53,5 +78,27 @@
 			 <a class="lind" href="as.html">About us</a>
 		</nav>
 	</div>
+    <center>
+        <p>
+            <div id="result"></div>
+        </p>
+    </center>
+    <script>
+        fetch('https://api.github.com/repos/red-rc/Red/contents/config.txt')
+            .then(function(response) {
+            return response.json();
+        })
+            .then(function(data) {
+            var encodedContent = data.content;
+            var decodedContent = atob(encodedContent);
+            
+            var resultField = document.getElementById('result');
+            resultField.innerHTML = decodedContent;
+        })
+            .catch(function(error) {
+            console.log(error);
+        });
+    </script>
+
 </body>
 </html>
