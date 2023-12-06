@@ -1,2 +1,2 @@
 
-<div class="head">Hello</div><div class="text">Go fuck</div><div class="time">2023/11/6/13</div>
+<div class="head">Hello</div><div class="text">Go fuck</div><div class="time">2023/11/6/13</div><div class="head">Hello</div><div class="text">Go fuck</div><div class="time">2023/11/6/13</div>
